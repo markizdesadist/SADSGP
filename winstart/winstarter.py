@@ -20,6 +20,7 @@ class MainWindow(QtWidgets.QWidget):
         self.center_frame = QtWidgets.QHBoxLayout()
         self.lower_frame = QtWidgets.QHBoxLayout()
 
+
     @logger.logger.catch
     def setting_window(self):
         """
