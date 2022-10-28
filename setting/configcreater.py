@@ -35,9 +35,9 @@ class Config:
 
         self.config.add_section("FONT_and_COLOR")
         self.config.set("FONT_and_COLOR", "font", "Courier")
-        self.config.set("FONT_and_COLOR", "font_size", "12")
+        self.config.set("FONT_and_COLOR", "font_size", "14")
         self.config.set("FONT_and_COLOR", "font_style", "Normal")
-        self.config.set("FONT_and_COLOR", "btn_color", "green")
+        self.config.set("FONT_and_COLOR", "btn_color", "grey")
 
         with open(self.path_file, "w") as config_file:
             self.config.write(config_file)

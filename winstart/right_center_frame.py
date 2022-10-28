@@ -1,35 +1,22 @@
 from abc import ABC, abstractmethod
-from PyQt5.QtWidgets import QVBoxLayout, QPushButton, QListWidget, QLabel, QGroupBox, QHBoxLayout, QFrame, \
-    QAbstractItemView, QCompleter
-from PyQt5.QtCore import QRect, Qt, QSize
-
-
-class RightCentralWidget:
-    def __init__(self):
-        self.car = ListCar()
-        self.client = ListClient()
-        self.order = ListOrder()
-
-    def set_frame(self):
-        """Установка фрейма виджета."""
-        self.hmain = QHBoxLayout()
-        self.hmain.addLayout(self.client.set_body())
-        self.hmain.addLayout(self.car.set_body())
-        self.hmain.addLayout(self.order.set_body())
-
-        return self.hmain
+from PyQt5.QtWidgets import QVBoxLayout, QPushButton, QListWidget, QLabel, QGroupBox, QFrame, QAbstractItemView, \
+    QCompleter, QLineEdit
+from PyQt5.QtCore import QRect, Qt
 
 
 class BaseClassWidget(ABC):
     """Базовый класс для создания виджета ListWidget."""
 
     def __init__(self):
+        self.data_list = list()
         self.lbl_group = QGroupBox()
         self.lbl = QLabel()
-        self.find = QPushButton()
+        self.find = QLineEdit()
         self.btn_refresh = QPushButton()
         self.widget_list = QListWidget()
         self.settings_elements()
+        self.completer = QCompleter(self.data_list)
+        self.find.setCompleter(self.completer)
 
     def set_body(self):
         self.vmain = QVBoxLayout()
@@ -107,7 +94,8 @@ class BaseClassWidget(ABC):
     @abstractmethod
     def print(self):
         """Переназначаемая функция. Очистка поля и добавление элементов списка в поле ListWidget."""
-        pass
+        self.clear_items()
+        self.set_items(self.data_list)
 
     @abstractmethod
     def print_widget(self, *args):
@@ -125,9 +113,13 @@ class BaseClassWidget(ABC):
 
 # ===============================================
 class ListOrder(BaseClassWidget):
+    list = [str(x) for x in ['q', 'w', 'e', 'r']]
+
     def __init__(self):
         super(ListOrder, self).__init__()
-        self.list = [str(x) for x in ['q', 'w', 'e', 'r']]
+        self.data_list = [str(x) for x in ['q', 'w', 'e', 'r']]
+
+        self.print()
 
     def set_label_text(self, text: str = None, car: str = None):
         if text and car:
@@ -142,8 +134,9 @@ class ListOrder(BaseClassWidget):
 
     def print(self):
         """Переназначаемая функция. Очистка поля и добавление элементов списка в поле ListWidget."""
-        self.clear_items()
-        self.set_items(self.list)
+        # self.clear_items()
+        # self.set_items(self.data_list)
+        pass
 
     def print_widget(self, *args):
         """Переназначаемая функция. Очистка поля и добавление элементов списка в соседствующие поля ListWidget."""
@@ -155,9 +148,13 @@ class ListOrder(BaseClassWidget):
 
 # ===============================================
 class ListCar(BaseClassWidget):
+    list = [str(x) for x in ['Volvo', 'MAZ', 'Mazda', 'DAF']]
+
     def __init__(self):
         super(ListCar, self).__init__()
-        self.list = [str(x) for x in ['Volvo', 'MAZ', 'Mazda', 'DAF']]
+        self.data_list = [str(x) for x in ['Volvo', 'MAZ', 'Mazda', 'DAF']]
+
+        self.print()
 
     def set_label_text(self, text: str = None):
         if text:
@@ -171,7 +168,7 @@ class ListCar(BaseClassWidget):
     def print(self):
         """Переназначаемая функция. Очистка поля и добавление элементов списка в поле ListWidget."""
         self.clear_items()
-        self.set_items(self.list)
+        self.set_items(self.data_list)
 
     def print_widget(self, *args):
         """Переназначаемая функция. Очистка поля и добавление элементов списка в соседствующие поля ListWidget."""
@@ -183,11 +180,13 @@ class ListCar(BaseClassWidget):
 
 # ===============================================
 class ListClient(BaseClassWidget):
-    temp = [str(x) for x in range(10)]
+    list = [str(x) for x in range(10)]
 
     def __init__(self):
         super(ListClient, self).__init__()
-        self.list = [str(x) for x in ['Volvo', 'MAZ', 'Mazda', 'DAF']]
+        self.data_list = [str(x) for x in range(20, 40)]
+
+        self.print()
 
     def set_label_text(self):
         self.lbl.setText('Список клиентов')
@@ -198,7 +197,7 @@ class ListClient(BaseClassWidget):
     def print(self):
         """Переназначаемая функция. Очистка поля и добавление элементов списка в поле ListWidget."""
         self.clear_items()
-        self.set_items(ListClient.temp)
+        self.set_items(self.data_list)
 
     def print_widget(self, *args):
         """Переназначаемая функция. Очистка поля и добавление элементов списка в соседствующие поля ListWidget."""
@@ -208,125 +207,5 @@ class ListClient(BaseClassWidget):
         pass
 
 
-# # from dbase.dbapi import APIAxiomDB
-# # from frame.CSS_template import BaseClassWidget
-# from log_setting import logger
-#
-#
-# class ListWOrder(BaseClassWidget):
-#     text = 'Заказ-Наряд'
-#     size = 250
-#     template = {
-#         'pattern': '  {} - {}    : {}'
-#     }
-#     query = APIAxiomDB()
-#     temp_list = [str(idnum.id) for idnum in query.get_list_order()]
-#
-#     # def __int__(self, size=200):
-#     #     super(ListWOrder, self).__int__()
-#
-#     @logger.catch
-#     def get_item_text_from_list(self, item):
-#         temp = item.text().split('-')
-#         temp_list = self.query.get_order_from_id(temp[0])
-#         return temp_list
-#
-#     @logger.catch
-#     def print(self):
-#         self.clear_items()
-#         order_item_list = [ListWOrder.template['pattern'].format(elem.id, elem.prefix, elem.data)
-#                            for elem in self.query.get_list_order()]
-#         self.set_items(order_item_list)
-#
-#     def print_one(self):
-#         pass
-#
-#     @logger.catch
-#     def print_widget(self, name, foo='clt'):
-#         self.clear_items()
-#         order_item_list = []
-#         if foo == 'clt':
-#             order_item_list = [ListWOrder.template['pattern'].format(elem.id, elem.prefix, elem.data)
-#                                for elem in self.query.get_client_list_order(name)]
-#         elif foo == 'car':
-#             order_item_list = [ListWOrder.template['pattern'].format(elem.id, elem.prefix, elem.data)
-#                                for elem in self.query.get_car_list_order(name)]
-#         self.set_items(order_item_list)
-#
-#
-# class ListWClient(BaseClassWidget):
-#     text = 'Клиент'
-#     size = 250
-#     query = APIAxiomDB()
-#     temp_list = [name.lower() for name in query.get_list_company()]
-#
-#     # def __int__(self, size=200):
-#     #     super(ListWClient, self).__int__()
-#
-#     @logger.catch
-#     def print(self):
-#         self.clear_items()
-#         client_item_list = self.query.get_list_company()
-#         self.set_items(client_item_list)
-#
-#     @logger.catch
-#     def print_one(self, id_num: int):
-#         self.clear_items()
-#         client_item = self.query.get_client_from_order(id_num)
-#         self.set_item(client_item.name)
-#
-#     @logger.catch
-#     def print_widget(self, client_item):
-#         self.clear_items()
-#         self.set_item(client_item.name)
-#
-#     @logger.catch
-#     def get_item_text_from_list(self, item):
-#         client_item_list = self.query.get_client_from_name(item.text())
-#         return client_item_list
-#
-#
-# class ListWCar(BaseClassWidget):
-#     text = 'Car'
-#     size = 330
-#     template = {
-#         'pattern': '{}  | {} | {}-{}'
-#     }
-#     query = APIAxiomDB()
-#     temp_list = [car.number for car in query.get_list_car()]
-#
-#     # def __int__(self, size=350):
-#     #     super(ListWCar, self).__int__()
-#
-#     @logger.catch
-#     def print(self):
-#         self.clear_items()
-#
-#         car_item_list = [ListWCar.template['pattern'].format(elem.id, elem.number, elem.name, elem.model)
-#                          for elem in self.query.get_list_car()
-#                          if elem.name != 'Запчасти']
-#         self.set_items(car_item_list)
-#
-#     @logger.catch
-#     def print_one(self, id_num: int):
-#         self.clear_items()
-#         car_item = self.query.get_car_from_order(id_num)
-#         self.set_item(ListWCar.template['pattern'].format(car_item.id, car_item.number, car_item.name, car_item.model))
-#
-#     @logger.catch
-#     def print_widget(self, name):
-#         self.clear_items()
-#         car_item_list = [ListWCar.template['pattern'].format(elem.id, elem.number, elem.name, elem.model)
-#                          for elem in self.query.get_client_list_car(name)
-#                          if elem.name != 'Запчасти']
-#         self.set_items(car_item_list)
-#
-#     @logger.catch
-#     def get_item_text_from_list(self, item: str):
-#         elem = item.split()
-#         car_item = self.query.get_car_from_id(int(elem[0]))
-#         return car_item
-#
-#
 if __name__ == "__main__":
     pass

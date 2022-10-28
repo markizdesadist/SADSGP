@@ -24,8 +24,8 @@ class Logo:
         self.lbl.setText(text)
 
     def settings_label(self):
-        self.lbl.setMinimumWidth(70)
-        self.lbl.setMaximumWidth(70)
+        self.lbl.setMinimumWidth(50)
+        self.lbl.setMaximumWidth(50)
 
 
 class Timer:
@@ -36,8 +36,8 @@ class Timer:
 
     def set_timer(self):
         # self.timeEdit.setGeometry(QRect(50, 0, 150, 70))
-        size = QSize(300, 100)
-        size.scale(200, 70, Qt.KeepAspectRatio)
+        size = QSize(300, 50)
+        size.scale(200, 50, Qt.KeepAspectRatio)
         self.timeEdit.setMinimumSize(size)
         self.timeEdit.setMaximumSize(size)
         self.timeEdit.setLayoutDirection(Qt.LeftToRight)
