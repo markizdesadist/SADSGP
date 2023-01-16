@@ -17,7 +17,7 @@ def splasher(func):
                 )
                 qApp.processEvents()
 
-        splash = QSplashScreen(QPixmap(""))
+        splash = QSplashScreen(QPixmap("templatefiles\\CZk.gif"))
         splash.showMessage(
             "Загрузка данных ... 0%",
             Qt.AlignHCenter | Qt.AlignBottom,

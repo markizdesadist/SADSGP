@@ -71,4 +71,7 @@ def switch_car_number(number: str = '1234 AA-5') -> str:
 
 
 if __name__ == '__main__':
-    print(switch_car_number('ТК12348'))
+    print(switch_car_number('ТК12347'))
+    print(switch_car_number('A12347A'))
+    print(switch_car_number('12347AA'))
+    print(switch_car_number('12-34AA-7'))

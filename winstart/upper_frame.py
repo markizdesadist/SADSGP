@@ -59,3 +59,8 @@ class Timer:
 
     def time_edit_update(self):
         self.timeEdit.setTime(self.current_time)
+
+
+if __name__ == '__main__':
+    pass
+

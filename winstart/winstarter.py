@@ -118,7 +118,7 @@ class MainWindow(QtWidgets.QWidget):
     def ui_window(self):
         self.root_frame.insertLayout(0, self.commands.logo.set_frame())
         self.root_frame.insertLayout(1, self.center_frame)
-        # self.root_frame.insertWidget(2, button_frame.BtnFrame().set_frame())
+        # self.root_frame.insertWidget(2, self.button_frame.BtnFrame().set_frame())
 
         self.center_frame.addLayout(self.set_frame_left())
         self.center_frame.addLayout(self.set_frame_right())
@@ -153,9 +153,7 @@ class MainWindow(QtWidgets.QWidget):
         self.tabWidget.setStyleSheet("background-color: rgb(185, 185, 185);")
         self.tabWidget.setTabPosition(QTabWidget.North)
         self.tabWidget.setTabShape(QTabWidget.Rounded)
-        self.tabWidget.setElideMode(Qt.ElideNone)
-
-        self.tabWidget.addTab(self.commands.order.set_frame(), '')
+        # self.tabWidget.setElideMode(Qt.Eawmands.order.set_frame(), '')
         self.tabWidget.addTab(self.commands.client.set_frame(), '')
         self.tabWidget.addTab(self.commands.car.set_frame(), '')
 

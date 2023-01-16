@@ -2,7 +2,6 @@ from loguru import logger
 import os
 import sys
 
-
 info_path = os.path.abspath(os.path.join('..', 'logs', 'log_{time:DD_MM_YY}.log'))
 warning_path = os.path.abspath(os.path.join('..', 'logs', 'warning', 'logs', 'log_{time:DD_MM_YY}.log'))
 sys.path.append(info_path)
