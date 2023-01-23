@@ -1,0 +1,511 @@
+[23-08-22 19:03] | ERROR	| __main__:<winstarter>: (line: 52) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (11032), thread 'MainThread' (3564):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 80, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05857148>
+    └ <function splasher.<locals>.wrapper at 0x058570B8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\splashscreen.py", line 30, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05857148>,)
+    └ <function start at 0x015A8898>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 73, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x032A0970>
+    └ <__main__.MainWindow object at 0x05857148>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 52, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05849F10>
+    └ <__main__.MainWindow object at 0x05857148>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 66, in ui_window
+    self.center_frame.addLayout(LeftCentralWidget().set_frame())
+    │    │            │         └ <class 'winstart.left_center_frame.LeftCentralWidget'>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x05857220>
+    └ <__main__.MainWindow object at 0x05857148>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 10, in __init__
+    self.tab = TabWidget().set_body()
+    │          └ <class 'winstart.left_center_frame.TabWidget'>
+    └ <winstart.left_center_frame.LeftCentralWidget object at 0x06015730>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 53, in set_body
+    Order().set_frame(self.tab_order)
+    │                 │    └ <PyQt5.QtWidgets.QWidget object at 0x05857898>
+    │                 └ <winstart.left_center_frame.TabWidget object at 0x058576E8>
+    └ <class 'winstart.order_frame.Order'>
+
+TypeError: Order.set_frame() takes 1 positional argument but 2 were given
+[23-08-22 20:54] | ERROR	| __main__:<winstarter>: (line: 52) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (8944), thread 'MainThread' (10800):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 80, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05D784A8>
+    └ <function splasher.<locals>.wrapper at 0x05D78418>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\splashscreen.py", line 30, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05D784A8>,)
+    └ <function start at 0x01B08898>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 73, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x035E0970>
+    └ <__main__.MainWindow object at 0x05D784A8>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 52, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05D782B0>
+    └ <__main__.MainWindow object at 0x05D784A8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 66, in ui_window
+    self.center_frame.addLayout(LeftCentralWidget().set_frame())
+    │    │            │         └ <class 'winstart.left_center_frame.LeftCentralWidget'>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x05D78580>
+    └ <__main__.MainWindow object at 0x05D784A8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 10, in __init__
+    self.tab = TabWidget().set_body()
+    │          └ <class 'winstart.left_center_frame.TabWidget'>
+    └ <winstart.left_center_frame.LeftCentralWidget object at 0x06537568>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 53, in set_body
+    Order().set_frame(self.tab_order)
+    │                 │    └ <PyQt5.QtWidgets.QWidget object at 0x05D78BB0>
+    │                 └ <winstart.left_center_frame.TabWidget object at 0x05D789B8>
+    └ <class 'winstart.order_frame.Order'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 25, in __init__
+    super(Order, self).__init__()
+          │      └ <winstart.order_frame.Order object at 0x0653D910>
+          └ <class 'winstart.order_frame.Order'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 9, in __init__
+    self.car_edit = CarLabelGroup()
+    │               └ <class 'winstart.order_frame.CarLabelGroup'>
+    └ <winstart.order_frame.Order object at 0x0653D910>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 111, in __init__
+    self.brand = self.set_elem(super().label_dict[self.__class__]['brand'])
+    │            │    │                           │    └ <attribute '__class__' of 'object' objects>
+    │            │    │                           └ <winstart.order_frame.CarLabelGroup object at 0x0653D928>
+    │            │    └ <function BaseLabelGroup.set_elem at 0x038A5070>
+    │            └ <winstart.order_frame.CarLabelGroup object at 0x0653D928>
+    └ <winstart.order_frame.CarLabelGroup object at 0x0653D928>
+
+KeyError: <class 'winstart.order_frame.CarLabelGroup'>
+[23-08-22 20:56] | ERROR	| __main__:<winstarter>: (line: 52) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (12108), thread 'MainThread' (7372):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 80, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05E484A8>
+    └ <function splasher.<locals>.wrapper at 0x05E48418>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\splashscreen.py", line 30, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05E484A8>,)
+    └ <function start at 0x021B8898>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 73, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x03910970>
+    └ <__main__.MainWindow object at 0x05E484A8>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 52, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05E482B0>
+    └ <__main__.MainWindow object at 0x05E484A8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 66, in ui_window
+    self.center_frame.addLayout(LeftCentralWidget().set_frame())
+    │    │            │         └ <class 'winstart.left_center_frame.LeftCentralWidget'>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x05E48580>
+    └ <__main__.MainWindow object at 0x05E484A8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 10, in __init__
+    self.tab = TabWidget().set_body()
+    │          └ <class 'winstart.left_center_frame.TabWidget'>
+    └ <winstart.left_center_frame.LeftCentralWidget object at 0x065F7568>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 53, in set_body
+    Order().set_frame(self.tab_order)
+    │                 │    └ <PyQt5.QtWidgets.QWidget object at 0x05E48BB0>
+    │                 └ <winstart.left_center_frame.TabWidget object at 0x05E489B8>
+    └ <class 'winstart.order_frame.Order'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 25, in __init__
+    super(Order, self).__init__()
+          │      └ <winstart.order_frame.Order object at 0x065FD910>
+          └ <class 'winstart.order_frame.Order'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 9, in __init__
+    self.car_edit = CarLabelGroup()
+    │               └ <class 'winstart.order_frame.CarLabelGroup'>
+    └ <winstart.order_frame.Order object at 0x065FD910>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 112, in __init__
+    print(self.__name__)
+          └ <winstart.order_frame.CarLabelGroup object at 0x065FD928>
+
+AttributeError: 'CarLabelGroup' object has no attribute '__name__'
+[23-08-22 20:58] | ERROR	| __main__:<winstarter>: (line: 52) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (4124), thread 'MainThread' (7376):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 80, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x055484A8>
+    └ <function splasher.<locals>.wrapper at 0x05548418>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\splashscreen.py", line 30, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x055484A8>,)
+    └ <function start at 0x01308898>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 73, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x02DE0970>
+    └ <__main__.MainWindow object at 0x055484A8>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 52, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x055482B0>
+    └ <__main__.MainWindow object at 0x055484A8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 66, in ui_window
+    self.center_frame.addLayout(LeftCentralWidget().set_frame())
+    │    │            │         └ <class 'winstart.left_center_frame.LeftCentralWidget'>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x05548580>
+    └ <__main__.MainWindow object at 0x055484A8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 10, in __init__
+    self.tab = TabWidget().set_body()
+    │          └ <class 'winstart.left_center_frame.TabWidget'>
+    └ <winstart.left_center_frame.LeftCentralWidget object at 0x05CF7568>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 53, in set_body
+    Order().set_frame(self.tab_order)
+    │                 │    └ <PyQt5.QtWidgets.QWidget object at 0x05548BB0>
+    │                 └ <winstart.left_center_frame.TabWidget object at 0x055489B8>
+    └ <class 'winstart.order_frame.Order'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 25, in __init__
+    super(Order, self).__init__()
+          │      └ <winstart.order_frame.Order object at 0x05CFC910>
+          └ <class 'winstart.order_frame.Order'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 9, in __init__
+    self.car_edit = CarLabelGroup()
+    │               └ <class 'winstart.order_frame.CarLabelGroup'>
+    └ <winstart.order_frame.Order object at 0x05CFC910>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 114, in __init__
+    self.brand = self.set_elem(super().label_dict[self.__class__[::1]]['brand'])
+    │            │    │                           │    └ <attribute '__class__' of 'object' objects>
+    │            │    │                           └ <winstart.order_frame.CarLabelGroup object at 0x05CFC928>
+    │            │    └ <function BaseLabelGroup.set_elem at 0x03095028>
+    │            └ <winstart.order_frame.CarLabelGroup object at 0x05CFC928>
+    └ <winstart.order_frame.CarLabelGroup object at 0x05CFC928>
+
+TypeError: 'ABCMeta' object is not subscriptable
+[23-08-22 21:59] | ERROR	| __main__:<winstarter>: (line: 52) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (7264), thread 'MainThread' (10440):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 80, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05987610>
+    └ <function splasher.<locals>.wrapper at 0x05987580>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\splashscreen.py", line 30, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05987610>,)
+    └ <function start at 0x01F48898>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 73, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x03680970>
+    └ <__main__.MainWindow object at 0x05987610>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 52, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05987418>
+    └ <__main__.MainWindow object at 0x05987610>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 66, in ui_window
+    self.center_frame.addLayout(LeftCentralWidget().set_frame())
+    │    │            │         └ <class 'winstart.left_center_frame.LeftCentralWidget'>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x059876E8>
+    └ <__main__.MainWindow object at 0x05987610>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 10, in __init__
+    self.tab = TabWidget().set_body()
+    │          └ <class 'winstart.left_center_frame.TabWidget'>
+    └ <winstart.left_center_frame.LeftCentralWidget object at 0x060C7568>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 53, in set_body
+    Order().set_frame(self.tab_order)
+    │                 │    └ <PyQt5.QtWidgets.QWidget object at 0x05987D18>
+    │                 └ <winstart.left_center_frame.TabWidget object at 0x05987B20>
+    └ <class 'winstart.order_frame.Order'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 32, in set_frame
+    self.vmain.insertLayout(0, self.car_edit.set_group())
+    │    │     │               │    │        └ <function CarLabelGroup.set_group at 0x03736268>
+    │    │     │               │    └ <winstart.order_frame.CarLabelGroup object at 0x060CD928>
+    │    │     │               └ <winstart.order_frame.Order object at 0x060CD910>
+    │    │     └ <built-in method insertLayout>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x060D35C8>
+    └ <winstart.order_frame.Order object at 0x060CD910>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 164, in set_group
+    self.car_form.addLayout(self.brand, 0, 0, 1, 1).setRowMinimumHeight(50)
+    │    │        │         │    └ <PyQt5.QtWidgets.QFormLayout object at 0x05987BB0>
+    │    │        │         └ <winstart.order_frame.CarLabelGroup object at 0x060CD928>
+    │    │        └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QGridLayout object at 0x060D3610>
+    └ <winstart.order_frame.CarLabelGroup object at 0x060CD928>
+
+AttributeError: 'NoneType' object has no attribute 'setRowMinimumHeight'
+[23-08-22 22:02] | ERROR	| __main__:<winstarter>: (line: 52) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (10992), thread 'MainThread' (11664):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 80, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05BC7610>
+    └ <function splasher.<locals>.wrapper at 0x05BC7580>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\splashscreen.py", line 30, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05BC7610>,)
+    └ <function start at 0x021A8898>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 73, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x036C0970>
+    └ <__main__.MainWindow object at 0x05BC7610>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 52, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05BC7418>
+    └ <__main__.MainWindow object at 0x05BC7610>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 66, in ui_window
+    self.center_frame.addLayout(LeftCentralWidget().set_frame())
+    │    │            │         └ <class 'winstart.left_center_frame.LeftCentralWidget'>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x05BC76E8>
+    └ <__main__.MainWindow object at 0x05BC7610>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 10, in __init__
+    self.tab = TabWidget().set_body()
+    │          └ <class 'winstart.left_center_frame.TabWidget'>
+    └ <winstart.left_center_frame.LeftCentralWidget object at 0x06307568>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 53, in set_body
+    Order().set_frame(self.tab_order)
+    │                 │    └ <PyQt5.QtWidgets.QWidget object at 0x05BC7D18>
+    │                 └ <winstart.left_center_frame.TabWidget object at 0x05BC7B20>
+    └ <class 'winstart.order_frame.Order'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 32, in set_frame
+    self.vmain.insertLayout(0, self.car_edit.set_group())
+    │    │     │               │    │        └ <function CarLabelGroup.set_group at 0x039A6268>
+    │    │     │               │    └ <winstart.order_frame.CarLabelGroup object at 0x0630D928>
+    │    │     │               └ <winstart.order_frame.Order object at 0x0630D910>
+    │    │     └ <built-in method insertLayout>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x063135C8>
+    └ <winstart.order_frame.Order object at 0x0630D910>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 169, in set_group
+    self.car_form.setVerticaiSpacing( 50)
+    │    └ <PyQt5.QtWidgets.QGridLayout object at 0x06313610>
+    └ <winstart.order_frame.CarLabelGroup object at 0x0630D928>
+
+AttributeError: 'QGridLayout' object has no attribute 'setVerticaiSpacing'
+[23-08-22 22:08] | ERROR	| __main__:<winstarter>: (line: 52) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (11184), thread 'MainThread' (10540):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 80, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05DC7610>
+    └ <function splasher.<locals>.wrapper at 0x05DC7580>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\splashscreen.py", line 30, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05DC7610>,)
+    └ <function start at 0x02208898>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 73, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x039C0970>
+    └ <__main__.MainWindow object at 0x05DC7610>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 52, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05DC7418>
+    └ <__main__.MainWindow object at 0x05DC7610>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 66, in ui_window
+    self.center_frame.addLayout(LeftCentralWidget().set_frame())
+    │    │            │         └ <class 'winstart.left_center_frame.LeftCentralWidget'>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x05DC76E8>
+    └ <__main__.MainWindow object at 0x05DC7610>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 10, in __init__
+    self.tab = TabWidget().set_body()
+    │          └ <class 'winstart.left_center_frame.TabWidget'>
+    └ <winstart.left_center_frame.LeftCentralWidget object at 0x05DCF7F0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 53, in set_body
+    Order().set_frame(self.tab_order)
+    │                 │    └ <PyQt5.QtWidgets.QWidget object at 0x05DC7D18>
+    │                 └ <winstart.left_center_frame.TabWidget object at 0x05DC7B20>
+    └ <class 'winstart.order_frame.Order'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 32, in set_frame
+    self.vmain.insertLayout(0, self.car_edit.set_group())
+    │    │     │               │    │        └ <function CarLabelGroup.set_group at 0x03A76268>
+    │    │     │               │    └ <winstart.order_frame.CarLabelGroup object at 0x0651CBB0>
+    │    │     │               └ <winstart.order_frame.Order object at 0x0651CB98>
+    │    │     └ <built-in method insertLayout>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x065245C8>
+    └ <winstart.order_frame.Order object at 0x0651CB98>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 188, in set_group
+    return self.main(self.car_form)
+           │    │    │    └ <PyQt5.QtWidgets.QGridLayout object at 0x06524658>
+           │    │    └ <winstart.order_frame.CarLabelGroup object at 0x0651CBB0>
+           │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x06524610>
+           └ <winstart.order_frame.CarLabelGroup object at 0x0651CBB0>
+
+TypeError: 'QHBoxLayout' object is not callable
+[23-08-22 23:39] | ERROR	| __main__:<winstarter>: (line: 52) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (10324), thread 'MainThread' (7060):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 80, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05E67610>
+    └ <function splasher.<locals>.wrapper at 0x05E67580>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\splashscreen.py", line 30, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05E67610>,)
+    └ <function start at 0x01CD8898>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 73, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x039A0970>
+    └ <__main__.MainWindow object at 0x05E67610>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 52, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05E67418>
+    └ <__main__.MainWindow object at 0x05E67610>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 66, in ui_window
+    self.center_frame.addLayout(LeftCentralWidget().set_frame())
+    │    │            │         └ <class 'winstart.left_center_frame.LeftCentralWidget'>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x05E676E8>
+    └ <__main__.MainWindow object at 0x05E67610>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 10, in __init__
+    self.tab = TabWidget().set_body()
+    │          └ <class 'winstart.left_center_frame.TabWidget'>
+    └ <winstart.left_center_frame.LeftCentralWidget object at 0x065A7568>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 53, in set_body
+    Order().set_frame(self.tab_order)
+    │                 │    └ <PyQt5.QtWidgets.QWidget object at 0x05E67D18>
+    │                 └ <winstart.left_center_frame.TabWidget object at 0x05E67B20>
+    └ <class 'winstart.order_frame.Order'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 32, in set_frame
+    self.vmain.insertLayout(0, self.car_edit.set_group())
+    │    │     │               │    │        └ <function CarLabelGroup.set_group at 0x03A56268>
+    │    │     │               │    └ <winstart.order_frame.CarLabelGroup object at 0x065AD928>
+    │    │     │               └ <winstart.order_frame.Order object at 0x065AD910>
+    │    │     └ <built-in method insertLayout>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x065B35C8>
+    └ <winstart.order_frame.Order object at 0x065AD910>
+
+TypeError: insertLayout(self, int, QLayout, stretch: int = 0): argument 2 has unexpected type 'QFrame'
+[23-08-22 23:44] | ERROR	| __main__:<winstarter>: (line: 52) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (10040), thread 'MainThread' (9732):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 80, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05128610>
+    └ <function splasher.<locals>.wrapper at 0x05128580>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\splashscreen.py", line 30, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05128610>,)
+    └ <function start at 0x01508898>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 73, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x02C60970>
+    └ <__main__.MainWindow object at 0x05128610>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 52, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05128418>
+    └ <__main__.MainWindow object at 0x05128610>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 66, in ui_window
+    self.center_frame.addLayout(LeftCentralWidget().set_frame())
+    │    │            │         └ <class 'winstart.left_center_frame.LeftCentralWidget'>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x051286E8>
+    └ <__main__.MainWindow object at 0x05128610>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 10, in __init__
+    self.tab = TabWidget().set_body()
+    │          └ <class 'winstart.left_center_frame.TabWidget'>
+    └ <winstart.left_center_frame.LeftCentralWidget object at 0x05867598>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 58, in set_body
+    Client().set_frame(self.tab_client)
+    │                  │    └ <PyQt5.QtWidgets.QWidget object at 0x058734F0>
+    │                  └ <winstart.left_center_frame.TabWidget object at 0x05128B20>
+    └ <class 'winstart.order_frame.Client'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 61, in set_frame
+    self.vmain.insertWidget(0, self.client_edit.set_group())
+    │    │     │               │    │           └ <function ClientLabelGroup.set_group at 0x02D16340>
+    │    │     │               │    └ <winstart.order_frame.ClientLabelGroup object at 0x0586FE50>
+    │    │     │               └ <winstart.order_frame.Client object at 0x0586C940>
+    │    │     └ <built-in method insertWidget>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x05873AD8>
+    └ <winstart.order_frame.Client object at 0x0586C940>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\order_frame.py", line 158, in set_group
+    self.car_form.addLayout(self.brand, 0, 0, 1, 1, alignment=Qt.AlignBottom)
+    │    │        │         │                                 │  └ 64
+    │    │        │         │                                 └ <class 'PyQt5.QtCore.Qt'>
+    │    │        │         └ <winstart.order_frame.ClientLabelGroup object at 0x0586FE50>
+    │    │        └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QGridLayout object at 0x05873B68>
+    └ <winstart.order_frame.ClientLabelGroup object at 0x0586FE50>
+
+AttributeError: 'ClientLabelGroup' object has no attribute 'brand'

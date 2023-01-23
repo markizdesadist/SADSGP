@@ -1,0 +1,330 @@
+[11-08-22 18:02] | ERROR	| __main__:<winstarter>: (line: 140) |-> : Professional : An error has been caught in function 'ui_window', process 'MainProcess' (5264), thread 'MainThread' (1464):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 207, in <module>
+    start()
+    └ <function start at 0x0567B808>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 200, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 28, in __init__
+    self.ui_window()
+    │    └ <function WindowMain.ui_window at 0x0567B658>
+    └ <__main__.WindowMain object at 0x0567BB68>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 140, in ui_window
+    self.root_vbox.addWidget(self.frame.frame_logo())
+    │    │         │         │    │     └ <function WindowMain.Frame.frame_logo at 0x05105E80>
+    │    │         │         │    └ <class '__main__.WindowMain.Frame'>
+    │    │         │         └ <__main__.WindowMain object at 0x0567BB68>
+    │    │         └ <built-in method addWidget>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x0567BA00>
+    └ <__main__.WindowMain object at 0x0567BB68>
+
+TypeError: WindowMain.Frame.frame_logo() missing 1 required positional argument: 'self'
+[11-08-22 18:02] | ERROR	| __main__:<winstarter>: (line: 142) |-> : Professional : An error has been caught in function 'ui_window', process 'MainProcess' (5264), thread 'MainThread' (1464):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 207, in <module>
+    start()
+    └ <function start at 0x0567B808>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 200, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 28, in __init__
+    self.ui_window()
+    │    └ <function WindowMain.ui_window at 0x0567B658>
+    └ <__main__.WindowMain object at 0x0567BB68>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 142, in ui_window
+    self.root_vbox.addWidget(self.frame.frame_btn())
+    │    │         │         │    │     └ <function WindowMain.Frame.frame_btn at 0x0567B070>
+    │    │         │         │    └ <class '__main__.WindowMain.Frame'>
+    │    │         │         └ <__main__.WindowMain object at 0x0567BB68>
+    │    │         └ <built-in method addWidget>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x0567BA00>
+    └ <__main__.WindowMain object at 0x0567BB68>
+
+TypeError: WindowMain.Frame.frame_btn() missing 1 required positional argument: 'self'
+[11-08-22 18:02] | ERROR	| __main__:<winstarter>: (line: 145) |-> : Professional : An error has been caught in function 'ui_window', process 'MainProcess' (5264), thread 'MainThread' (1464):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 207, in <module>
+    start()
+    └ <function start at 0x0567B808>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 200, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 28, in __init__
+    self.ui_window()
+    │    └ <function WindowMain.ui_window at 0x0567B658>
+    └ <__main__.WindowMain object at 0x0567BB68>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 145, in ui_window
+    self.main_hbox.addWidget(self.frame.frame_left())
+    │    │         │         │    │     └ <function WindowMain.Frame.frame_left at 0x0567B220>
+    │    │         │         │    └ <class '__main__.WindowMain.Frame'>
+    │    │         │         └ <__main__.WindowMain object at 0x0567BB68>
+    │    │         └ <built-in method addWidget>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x0567BA48>
+    └ <__main__.WindowMain object at 0x0567BB68>
+
+TypeError: WindowMain.Frame.frame_left() missing 1 required positional argument: 'self'
+[11-08-22 18:02] | ERROR	| __main__:<winstarter>: (line: 146) |-> : Professional : An error has been caught in function 'ui_window', process 'MainProcess' (5264), thread 'MainThread' (1464):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 207, in <module>
+    start()
+    └ <function start at 0x0567B808>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 200, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 28, in __init__
+    self.ui_window()
+    │    └ <function WindowMain.ui_window at 0x0567B658>
+    └ <__main__.WindowMain object at 0x0567BB68>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 146, in ui_window
+    self.main_hbox.addWidget(self.frame.frame_right())
+    │    │         │         │    │     └ <function WindowMain.Frame.frame_right at 0x0567B3D0>
+    │    │         │         │    └ <class '__main__.WindowMain.Frame'>
+    │    │         │         └ <__main__.WindowMain object at 0x0567BB68>
+    │    │         └ <built-in method addWidget>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x0567BA48>
+    └ <__main__.WindowMain object at 0x0567BB68>
+
+TypeError: WindowMain.Frame.frame_right() missing 1 required positional argument: 'self'
+[11-08-22 18:02] | ERROR	| __main__:<winstarter>: (line: 207) |-> : Professional : An error has been caught in function '<module>', process 'MainProcess' (5264), thread 'MainThread' (1464):
+Traceback (most recent call last):
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 207, in <module>
+    start()
+    └ <function start at 0x0567B808>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 200, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 29, in __init__
+    self.retranslateUi()
+    │    └ <function WindowMain.retranslateUi at 0x0567B7C0>
+    └ <__main__.WindowMain object at 0x0567BB68>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 158, in retranslateUi
+    self.tabWidget.setTabText(
+    └ <__main__.WindowMain object at 0x0567BB68>
+
+AttributeError: 'WindowMain' object has no attribute 'tabWidget'
+[11-08-22 18:06] | ERROR	| __main__:<winstarter>: (line: 141) |-> : Professional : An error has been caught in function 'ui_window', process 'MainProcess' (8608), thread 'MainThread' (2568):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 208, in <module>
+    start()
+    └ <function start at 0x0552C778>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 201, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 28, in __init__
+    self.ui_window()
+    │    └ <function WindowMain.ui_window at 0x0552C5C8>
+    └ <__main__.WindowMain object at 0x0552CA48>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 141, in ui_window
+    self.root_vbox.addWidget(self.frame.frame_logo())
+    │    │         │         │    │     └ <function WindowMain.Frame.frame_logo at 0x04FA8DF0>
+    │    │         │         │    └ <class '__main__.WindowMain.Frame'>
+    │    │         │         └ <__main__.WindowMain object at 0x0552CA48>
+    │    │         └ <built-in method addWidget>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x0552CA00>
+    └ <__main__.WindowMain object at 0x0552CA48>
+
+TypeError: WindowMain.Frame.frame_logo() missing 1 required positional argument: 'self'
+[11-08-22 18:06] | ERROR	| __main__:<winstarter>: (line: 143) |-> : Professional : An error has been caught in function 'ui_window', process 'MainProcess' (8608), thread 'MainThread' (2568):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 208, in <module>
+    start()
+    └ <function start at 0x0552C778>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 201, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 28, in __init__
+    self.ui_window()
+    │    └ <function WindowMain.ui_window at 0x0552C5C8>
+    └ <__main__.WindowMain object at 0x0552CA48>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 143, in ui_window
+    self.root_vbox.addWidget(self.frame.frame_btn())
+    │    │         │         │    │     └ <function WindowMain.Frame.frame_btn at 0x04FA8FA0>
+    │    │         │         │    └ <class '__main__.WindowMain.Frame'>
+    │    │         │         └ <__main__.WindowMain object at 0x0552CA48>
+    │    │         └ <built-in method addWidget>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x0552CA00>
+    └ <__main__.WindowMain object at 0x0552CA48>
+
+TypeError: WindowMain.Frame.frame_btn() missing 1 required positional argument: 'self'
+[11-08-22 18:06] | ERROR	| __main__:<winstarter>: (line: 146) |-> : Professional : An error has been caught in function 'ui_window', process 'MainProcess' (8608), thread 'MainThread' (2568):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 208, in <module>
+    start()
+    └ <function start at 0x0552C778>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 201, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 28, in __init__
+    self.ui_window()
+    │    └ <function WindowMain.ui_window at 0x0552C5C8>
+    └ <__main__.WindowMain object at 0x0552CA48>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 146, in ui_window
+    self.main_hbox.addWidget(self.frame.frame_left())
+    │    │         │         │    │     └ <function WindowMain.Frame.frame_left at 0x0552C190>
+    │    │         │         │    └ <class '__main__.WindowMain.Frame'>
+    │    │         │         └ <__main__.WindowMain object at 0x0552CA48>
+    │    │         └ <built-in method addWidget>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x0552C9B8>
+    └ <__main__.WindowMain object at 0x0552CA48>
+
+TypeError: WindowMain.Frame.frame_left() missing 1 required positional argument: 'self'
+[11-08-22 18:06] | ERROR	| __main__:<winstarter>: (line: 147) |-> : Professional : An error has been caught in function 'ui_window', process 'MainProcess' (8608), thread 'MainThread' (2568):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 208, in <module>
+    start()
+    └ <function start at 0x0552C778>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 201, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 28, in __init__
+    self.ui_window()
+    │    └ <function WindowMain.ui_window at 0x0552C5C8>
+    └ <__main__.WindowMain object at 0x0552CA48>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 147, in ui_window
+    self.main_hbox.addWidget(self.frame.frame_right())
+    │    │         │         │    │     └ <function WindowMain.Frame.frame_right at 0x0552C340>
+    │    │         │         │    └ <class '__main__.WindowMain.Frame'>
+    │    │         │         └ <__main__.WindowMain object at 0x0552CA48>
+    │    │         └ <built-in method addWidget>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x0552C9B8>
+    └ <__main__.WindowMain object at 0x0552CA48>
+
+TypeError: WindowMain.Frame.frame_right() missing 1 required positional argument: 'self'
+[11-08-22 18:06] | ERROR	| __main__:<winstarter>: (line: 208) |-> : Professional : An error has been caught in function '<module>', process 'MainProcess' (8608), thread 'MainThread' (2568):
+Traceback (most recent call last):
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 208, in <module>
+    start()
+    └ <function start at 0x0552C778>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 201, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 29, in __init__
+    self.retranslateUi()
+    │    └ <function WindowMain.retranslateUi at 0x0552C730>
+    └ <__main__.WindowMain object at 0x0552CA48>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 159, in retranslateUi
+    self.tabWidget.setTabText(
+    └ <__main__.WindowMain object at 0x0552CA48>
+
+AttributeError: 'WindowMain' object has no attribute 'tabWidget'
+[11-08-22 18:16] | ERROR	| __main__:<winstarter>: (line: 83) |-> : Professional : An error has been caught in function '<module>', process 'MainProcess' (1908), thread 'MainThread' (3032):
+Traceback (most recent call last):
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 83, in <module>
+    start()
+    └ <function start at 0x05726460>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 76, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 22, in __init__
+    self.frame = winelements.Frame()
+    │            │           └ <class 'winstart.winelements.Frame'>
+    │            └ <module 'winstart.winelements' from 'C:\\Users\\Professional\\PycharmProjects\\SADSGP\\winstart\\winelements.py'>
+    └ <__main__.WindowMain object at 0x05726730>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winelements.py", line 19, in __init__
+    super().retranslate()
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\texttranslate.py", line 3, in retranslate
+    _translate = QtCore.QCoreApplication.translate
+
+NameError: name 'QtCore' is not defined
+[11-08-22 18:34] | ERROR	| __main__:<winstarter>: (line: 83) |-> : Professional : An error has been caught in function '<module>', process 'MainProcess' (9160), thread 'MainThread' (2996):
+Traceback (most recent call last):
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 83, in <module>
+    start()
+    └ <function start at 0x055C65C8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 76, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 22, in __init__
+    self.frame = winelements.Frame()
+    │            │           └ <class 'winstart.winelements.Frame'>
+    │            └ <module 'winstart.winelements' from 'C:\\Users\\Professional\\PycharmProjects\\SADSGP\\winstart\\winelements.py'>
+    └ <__main__.WindowMain object at 0x055C6898>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winelements.py", line 61, in __init__
+    super().__init__()
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winelements.py", line 15, in __init__
+    self.retranslate()
+    │    └ <function Translate.retranslate at 0x055C1730>
+    └ <winstart.winelements.Frame object at 0x055D2568>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winelements.py", line 19, in retranslate
+    self.setWindowTitle(_translate("MainWindow", "BaseSTO"))
+    │                   └ <built-in function translate>
+    └ <winstart.winelements.Frame object at 0x055D2568>
+
+AttributeError: 'Frame' object has no attribute 'setWindowTitle'
+[11-08-22 18:36] | ERROR	| __main__:<winstarter>: (line: 83) |-> : Professional : An error has been caught in function '<module>', process 'MainProcess' (8336), thread 'MainThread' (6676):
+Traceback (most recent call last):
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 83, in <module>
+    start()
+    └ <function start at 0x051864F0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 76, in start
+    windows = WindowMain()
+              └ <class '__main__.WindowMain'>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 22, in __init__
+    self.frame = winelements.Frame()
+    │            │           └ <class 'winstart.winelements.Frame'>
+    │            └ <module 'winstart.winelements' from 'C:\\Users\\Professional\\PycharmProjects\\SADSGP\\winstart\\winelements.py'>
+    └ <__main__.WindowMain object at 0x051867C0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winelements.py", line 61, in __init__
+    super().retranslate()
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winelements.py", line 18, in retranslate
+    self.tabWidget.setTabText(
+    └ <winstart.winelements.Frame object at 0x05192520>
+
+AttributeError: 'Frame' object has no attribute 'tabWidget'

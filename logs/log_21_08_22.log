@@ -1,0 +1,209 @@
+[21-08-22 13:32] | INFO	| __main__:<winstarter>: (line: 227) |-> : Professional : : Начал работу с программой.
+[21-08-22 13:39] | INFO	| __main__:<winstarter>: (line: 227) |-> : Professional : : Начал работу с программой.
+[21-08-22 13:39] | ERROR	| __main__:<winstarter>: (line: 60) |-> : Professional : An error has been caught in function 'ui_window', process 'MainProcess' (5052), thread 'MainThread' (7556):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 235, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05204DF0>
+    └ <function splasher.<locals>.wrapper at 0x05204C40>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 219, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05204DF0>,)
+    └ <function start at 0x05204BB0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 228, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x03BC0610>
+    └ <__main__.MainWindow object at 0x05204DF0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 45, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05204778>
+    └ <__main__.MainWindow object at 0x05204DF0>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 60, in ui_window
+    frame2 = order_frame.Order().set_frame()
+             │           └ <class 'winstart.order_frame.Order'>
+             └ <module 'winstart.order_frame' from 'C:\\Users\\Professional\\PycharmProjects\\SADSGP\\winstart\\order_frame.py'>
+
+TypeError: Order.set_frame() missing 1 required positional argument: 'frame'
+[21-08-22 13:40] | INFO	| __main__:<winstarter>: (line: 227) |-> : Professional : : Начал работу с программой.
+[21-08-22 13:40] | ERROR	| __main__:<winstarter>: (line: 60) |-> : Professional : An error has been caught in function 'ui_window', process 'MainProcess' (6516), thread 'MainThread' (8780):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 235, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05BE4DF0>
+    └ <function splasher.<locals>.wrapper at 0x05BE4C40>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 219, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05BE4DF0>,)
+    └ <function start at 0x05BE4BB0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 228, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x045E0610>
+    └ <__main__.MainWindow object at 0x05BE4DF0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 45, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05BE4778>
+    └ <__main__.MainWindow object at 0x05BE4DF0>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 60, in ui_window
+    frame2 = order_frame.Order().set_frame()
+             │           └ <class 'winstart.order_frame.Order'>
+             └ <module 'winstart.order_frame' from 'C:\\Users\\Professional\\PycharmProjects\\SADSGP\\winstart\\order_frame.py'>
+
+TypeError: Order.set_frame() missing 1 required positional argument: 'frame'
+[21-08-22 13:42] | INFO	| __main__:<winstarter>: (line: 227) |-> : Professional : : Начал работу с программой.
+[21-08-22 13:42] | ERROR	| __main__:<winstarter>: (line: 124) |-> : Professional : An error has been caught in function 'frame_left', process 'MainProcess' (4716), thread 'MainThread' (5308):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 235, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05196D60>
+    └ <function splasher.<locals>.wrapper at 0x05196BB0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 219, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05196D60>,)
+    └ <function start at 0x05196B20>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 228, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x03C01580>
+    └ <__main__.MainWindow object at 0x05196D60>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 45, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x051966E8>
+    └ <__main__.MainWindow object at 0x05196D60>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 64, in ui_window
+    tab = TabWidget().frame_left()
+          └ <class '__main__.TabWidget'>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 124, in frame_left
+    order_frame.Order().set_frame(self.tab_order)
+    │           │                 │    └ <PyQt5.QtWidgets.QWidget object at 0x058982B0>
+    │           │                 └ <__main__.TabWidget object at 0x058988E0>
+    │           └ <class 'winstart.order_frame.Order'>
+    └ <module 'winstart.order_frame' from 'C:\\Users\\Professional\\PycharmProjects\\SADSGP\\winstart\\order_frame.py'>
+
+TypeError: Order.set_frame() takes 1 positional argument but 2 were given
+[21-08-22 13:46] | INFO	| __main__:<winstarter>: (line: 227) |-> : Professional : : Начал работу с программой.
+[21-08-22 13:46] | ERROR	| __main__:<winstarter>: (line: 60) |-> : Professional : An error has been caught in function 'ui_window', process 'MainProcess' (7116), thread 'MainThread' (6744):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 235, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05A66D60>
+    └ <function splasher.<locals>.wrapper at 0x05A66BB0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 219, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05A66D60>,)
+    └ <function start at 0x05A66B20>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 228, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x04471580>
+    └ <__main__.MainWindow object at 0x05A66D60>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 45, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05A666E8>
+    └ <__main__.MainWindow object at 0x05A66D60>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 60, in ui_window
+    frame2 = order_frame.Order().set_frame()
+             │           └ <class 'winstart.order_frame.Order'>
+             └ <module 'winstart.order_frame' from 'C:\\Users\\Professional\\PycharmProjects\\SADSGP\\winstart\\order_frame.py'>
+
+TypeError: Order.set_frame() missing 1 required positional argument: 'frame'
+[21-08-22 14:13] | INFO	| __main__:<winstarter>: (line: 228) |-> : Professional : : Начал работу с программой.
+[21-08-22 14:13] | ERROR	| __main__:<winstarter>: (line: 45) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (6104), thread 'MainThread' (6080):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 236, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x053B4DF0>
+    └ <function splasher.<locals>.wrapper at 0x053B4C40>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 220, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x053B4DF0>,)
+    └ <function start at 0x053B4BB0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 229, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x03D40610>
+    └ <__main__.MainWindow object at 0x053B4DF0>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 45, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x053B4778>
+    └ <__main__.MainWindow object at 0x053B4DF0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 63, in ui_window
+    self.root_frame.addLayout(button_frame.BtnFrame().set_frame())
+    │    │          │         │            └ <class 'winstart.button_frame.BtnFrame'>
+    │    │          │         └ <module 'winstart.button_frame' from 'C:\\Users\\Professional\\PycharmProjects\\SADSGP\\winstart\\button_frame.py'>
+    │    │          └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x05AC7070>
+    └ <__main__.MainWindow object at 0x053B4DF0>
+
+TypeError: addLayout(self, QLayout, stretch: int = 0): argument 1 has unexpected type 'QFrame'
+[21-08-22 14:15] | INFO	| __main__:<winstarter>: (line: 228) |-> : Professional : : Начал работу с программой.
+[21-08-22 14:54] | INFO	| __main__:<winstarter>: (line: 411) |-> : Professional : : Начал работу с программой.
+[21-08-22 14:54] | ERROR	| __main__:<winstarter>: (line: 46) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (3668), thread 'MainThread' (5460):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 419, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x058F1850>
+    └ <function splasher.<locals>.wrapper at 0x058F16A0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 222, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x058F1850>,)
+    └ <function start at 0x058F11D8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 412, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x0409BBF8>
+    └ <__main__.MainWindow object at 0x058F1850>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 46, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x0564CD60>
+    └ <__main__.MainWindow object at 0x058F1850>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 68, in ui_window
+    self.center_frame.addLayout(LeftCentralWidget().set_frame())
+    │    │            │         └ <class '__main__.LeftCentralWidget'>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x058F1B20>
+    └ <__main__.MainWindow object at 0x058F1850>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 235, in set_frame
+    self.frame.setMaximumSize(QtCore.QSize(self.size, 16777215))
+    │    │     │              │      │     └ <__main__.LeftCentralWidget object at 0x05918928>
+    │    │     │              │      └ <class 'PyQt5.QtCore.QSize'>
+    │    │     │              └ <module 'PyQt5.QtCore' from 'C:\\Users\\Professional\\AppData\\Local\\Programs\\Python\\Python310-32\\lib\\site-packages\\PyQ...
+    │    │     └ <built-in method setMaximumSize>
+    │    └ <PyQt5.QtWidgets.QFrame object at 0x05919100>
+    └ <__main__.LeftCentralWidget object at 0x05918928>
+
+AttributeError: 'LeftCentralWidget' object has no attribute 'size'
+[21-08-22 14:55] | INFO	| __main__:<winstarter>: (line: 411) |-> : Professional : : Начал работу с программой.

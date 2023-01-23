@@ -1,0 +1,249 @@
+[22-08-22 20:15] | INFO	| __main__:<winstarter>: (line: 241) |-> : Professional : : Начал работу с программой.
+[22-08-22 20:41] | INFO	| __main__:<winstarter>: (line: 184) |-> : Professional : : Начал работу с программой.
+[22-08-22 20:56] | INFO	| __main__:<winstarter>: (line: 186) |-> : Professional : : Начал работу с программой.
+[22-08-22 20:56] | ERROR	| __main__:<winstarter>: (line: 48) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (3744), thread 'MainThread' (4384):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 194, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x0547B5C8>
+    └ <function splasher.<locals>.wrapper at 0x0547B418>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 173, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x0547B5C8>,)
+    └ <function start at 0x0547B388>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 187, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x03D05DA8>
+    └ <__main__.MainWindow object at 0x0547B5C8>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 48, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x0546DFA0>
+    └ <__main__.MainWindow object at 0x0547B5C8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 65, in ui_window
+    self.root_frame.insertLayout(2, button_frame.BtnFrame().set_frame())
+    │    │          │               │            └ <class 'winstart.button_frame.BtnFrame'>
+    │    │          │               └ <module 'winstart.button_frame' from 'C:\\Users\\Professional\\PycharmProjects\\SADSGP\\winstart\\button_frame.py'>
+    │    │          └ <built-in method insertLayout>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x0547B808>
+    └ <__main__.MainWindow object at 0x0547B5C8>
+
+TypeError: insertLayout(self, int, QLayout, stretch: int = 0): argument 2 has unexpected type 'QFrame'
+[22-08-22 20:57] | INFO	| __main__:<winstarter>: (line: 186) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:04] | INFO	| __main__:<winstarter>: (line: 156) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:07] | INFO	| __main__:<winstarter>: (line: 105) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:08] | INFO	| __main__:<winstarter>: (line: 105) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:16] | INFO	| __main__:<winstarter>: (line: 105) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:27] | INFO	| __main__:<winstarter>: (line: 100) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:27] | ERROR	| __main__:<winstarter>: (line: 47) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (11544), thread 'MainThread' (4356):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 108, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05DD92F8>
+    └ <function splasher.<locals>.wrapper at 0x05DD9268>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 93, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05DD92F8>,)
+    └ <function start at 0x05DD9220>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 101, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x036A0A48>
+    └ <__main__.MainWindow object at 0x05DD92F8>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 47, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05DD90B8>
+    └ <__main__.MainWindow object at 0x05DD92F8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 62, in ui_window
+    self.center_frame.addLayout(RightCentralWidget().set_frame())
+    │    │            │         └ <class 'winstart.right_center_frame.RightCentralWidget'>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x05DD93D0>
+    └ <__main__.MainWindow object at 0x05DD92F8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\right_center_frame.py", line 16, in set_frame
+    self.hmain.addLayout(self.client.set_body())
+    │    │     │         │    │      └ <function BaseClassWidget.set_body at 0x03B82268>
+    │    │     │         │    └ <winstart.right_center_frame.ListClient object at 0x06569508>
+    │    │     │         └ <winstart.right_center_frame.RightCentralWidget object at 0x06540688>
+    │    │     └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x065637C0>
+    └ <winstart.right_center_frame.RightCentralWidget object at 0x06540688>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\right_center_frame.py", line 38, in set_body
+    self.vmain.addWidget(self.list)
+    │    │     │         │    └ ['Volvo', 'MAZ', 'Mazda', 'DAF']
+    │    │     │         └ <winstart.right_center_frame.ListClient object at 0x06569508>
+    │    │     └ <built-in method addWidget>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x06563850>
+    └ <winstart.right_center_frame.ListClient object at 0x06569508>
+
+TypeError: addWidget(self, QWidget, stretch: int = 0, alignment: Union[Qt.Alignment, Qt.AlignmentFlag] = Qt.Alignment()): argument 1 has unexpected type 'list'
+[22-08-22 21:30] | INFO	| __main__:<winstarter>: (line: 100) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:32] | INFO	| __main__:<winstarter>: (line: 100) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:34] | INFO	| __main__:<winstarter>: (line: 100) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:36] | INFO	| __main__:<winstarter>: (line: 100) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:37] | INFO	| __main__:<winstarter>: (line: 100) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:39] | INFO	| __main__:<winstarter>: (line: 100) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:52] | INFO	| __main__:<winstarter>: (line: 100) |-> : Professional : : Начал работу с программой.
+[22-08-22 21:57] | INFO	| __main__:<winstarter>: (line: 100) |-> : Professional : : Начал работу с программой.
+[22-08-22 22:02] | INFO	| __main__:<winstarter>: (line: 100) |-> : Professional : : Начал работу с программой.
+[22-08-22 22:03] | INFO	| __main__:<winstarter>: (line: 100) |-> : Professional : : Начал работу с программой.
+[22-08-22 22:56] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 22:56] | ERROR	| __main__:<winstarter>: (line: 48) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (7024), thread 'MainThread' (11184):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 109, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x058E9388>
+    └ <function splasher.<locals>.wrapper at 0x058E92F8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 94, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x058E9388>,)
+    └ <function start at 0x058E92B0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 102, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x03828A00>
+    └ <__main__.MainWindow object at 0x058E9388>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 48, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x058E9148>
+    └ <__main__.MainWindow object at 0x058E9388>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 60, in ui_window
+    self.root_frame.insertWidget(2, button_frame.BtnFrame().set_frame())
+    │    │          │               └ <module 'winstart.button_frame' from 'C:\\Users\\Professional\\PycharmProjects\\SADSGP\\winstart\\button_frame.py'>
+    │    │          └ <built-in method insertWidget>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x058E93D0>
+    └ <__main__.MainWindow object at 0x058E9388>
+
+AttributeError: module 'winstart.button_frame' has no attribute 'BtnFrame'
+[22-08-22 22:56] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:04] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:04] | ERROR	| __main__:<winstarter>: (line: 48) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (10856), thread 'MainThread' (8944):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 109, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05C09460>
+    └ <function splasher.<locals>.wrapper at 0x05C093D0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 94, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05C09460>,)
+    └ <function start at 0x05C09388>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 102, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x03730A48>
+    └ <__main__.MainWindow object at 0x05C09460>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 48, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x05C09220>
+    └ <__main__.MainWindow object at 0x05C09460>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 62, in ui_window
+    self.center_frame.addWidget(LeftCentralWidget().set_frame(), alignment=Qt.AlignTop | Qt.AlignLeft)
+    │    │            │         │                                          │  │          │  └ 1
+    │    │            │         │                                          │  │          └ <class 'PyQt5.QtCore.Qt'>
+    │    │            │         │                                          │  └ 32
+    │    │            │         │                                          └ <class 'PyQt5.QtCore.Qt'>
+    │    │            │         └ <class 'winstart.left_center_frame.LeftCentralWidget'>
+    │    │            └ <built-in method addWidget>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x05C09538>
+    └ <__main__.MainWindow object at 0x05C09460>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 15, in set_frame
+    self.vmain.addWidget(self.btn_frame, alignment=Qt.AlignTop | Qt.AlignLeft)
+    │    │     │         │    │                    │  │          │  └ 1
+    │    │     │         │    │                    │  │          └ <class 'PyQt5.QtCore.Qt'>
+    │    │     │         │    │                    │  └ 32
+    │    │     │         │    │                    └ <class 'PyQt5.QtCore.Qt'>
+    │    │     │         │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x05C09AD8>
+    │    │     │         └ <winstart.left_center_frame.LeftCentralWidget object at 0x05C0F790>
+    │    │     └ <built-in method addWidget>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x05C098E0>
+    └ <winstart.left_center_frame.LeftCentralWidget object at 0x05C0F790>
+
+TypeError: addWidget(self, QWidget, stretch: int = 0, alignment: Union[Qt.Alignment, Qt.AlignmentFlag] = Qt.Alignment()): argument 1 has unexpected type 'QHBoxLayout'
+[22-08-22 23:06] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:12] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:13] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:14] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:15] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:16] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:21] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:25] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:25] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:26] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:27] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:35] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:35] | ERROR	| __main__:<winstarter>: (line: 48) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (8832), thread 'MainThread' (4736):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 109, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x04F394F0>
+    └ <function splasher.<locals>.wrapper at 0x04F39460>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 94, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x04F394F0>,)
+    └ <function start at 0x04F39418>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 102, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x02E18A00>
+    └ <__main__.MainWindow object at 0x04F394F0>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 48, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x04F392B0>
+    └ <__main__.MainWindow object at 0x04F394F0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 62, in ui_window
+    self.center_frame.addLayout(LeftCentralWidget().set_frame())
+    │    │            │         └ <class 'winstart.left_center_frame.LeftCentralWidget'>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x04F395C8>
+    └ <__main__.MainWindow object at 0x04F394F0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\left_center_frame.py", line 27, in set_frame
+    self.vmain.addLayout(self.lower_lbl, alignment=Qt.AlignBottom | Qt.AlignLeft)
+    │    │     │         │    │                    │  │             │  └ 1
+    │    │     │         │    │                    │  │             └ <class 'PyQt5.QtCore.Qt'>
+    │    │     │         │    │                    │  └ 64
+    │    │     │         │    │                    └ <class 'PyQt5.QtCore.Qt'>
+    │    │     │         │    └ <PyQt5.QtWidgets.QLabel object at 0x04F39BF8>
+    │    │     │         └ <winstart.left_center_frame.LeftCentralWidget object at 0x04F3F760>
+    │    │     └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x04F39970>
+    └ <winstart.left_center_frame.LeftCentralWidget object at 0x04F3F760>
+
+TypeError: addLayout(self, QLayout, stretch: int = 0): argument 1 has unexpected type 'QLabel'
+[22-08-22 23:36] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:38] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:38] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:39] | INFO	| __main__:<winstarter>: (line: 101) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:41] | INFO	| __main__:<winstarter>: (line: 100) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:42] | INFO	| __main__:<winstarter>: (line: 104) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:43] | INFO	| __main__:<winstarter>: (line: 104) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:46] | INFO	| __main__:<winstarter>: (line: 104) |-> : Professional : : Начал работу с программой.
+[22-08-22 23:55] | INFO	| __main__:<winstarter>: (line: 104) |-> : Professional : : Начал работу с программой.

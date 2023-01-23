@@ -1,0 +1,57 @@
+[24-08-22 18:15] | INFO	| __main__:<winstarter>: (line: 165) |-> : Professional : : Начал работу с программой.
+[24-08-22 18:15] | ERROR	| __main__:<winstarter>: (line: 82) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (4464), thread 'MainThread' (12184):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 173, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x03CDEF10>
+    └ <function splasher.<locals>.wrapper at 0x03CDEE80>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\splashscreen.py", line 30, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x03CDEF10>,)
+    └ <function start at 0x019688E0>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 166, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x03CDEA48>
+    └ <__main__.MainWindow object at 0x03CDEF10>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 82, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x03CDEBF8>
+    └ <__main__.MainWindow object at 0x03CDEF10>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 96, in ui_window
+    self.center_frame.addLayout(self.set_frame_left())
+    │    │            │         │    └ <function MainWindow.set_frame_left at 0x03CDEE38>
+    │    │            │         └ <__main__.MainWindow object at 0x03CDEF10>
+    │    │            └ <built-in method addLayout>
+    │    └ <PyQt5.QtWidgets.QHBoxLayout object at 0x03D0F340>
+    └ <__main__.MainWindow object at 0x03CDEF10>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 154, in set_frame_left
+    self.left_main.addWidget(self.tab_widget, alignment=Qt.AlignTop | Qt.AlignLeft)
+    │    │         │         │                          │  │          │  └ 1
+    │    │         │         │                          │  │          └ <class 'PyQt5.QtCore.Qt'>
+    │    │         │         │                          │  └ 32
+    │    │         │         │                          └ <class 'PyQt5.QtCore.Qt'>
+    │    │         │         └ <__main__.MainWindow object at 0x03CDEF10>
+    │    │         └ <built-in method addWidget>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x03D0FE80>
+    └ <__main__.MainWindow object at 0x03CDEF10>
+
+AttributeError: 'MainWindow' object has no attribute 'tab_widget'
+[24-08-22 18:15] | INFO	| __main__:<winstarter>: (line: 165) |-> : Professional : : Начал работу с программой.
+[24-08-22 18:19] | INFO	| __main__:<winstarter>: (line: 170) |-> : Professional : : Начал работу с программой.
+[24-08-22 18:25] | INFO	| __main__:<winstarter>: (line: 170) |-> : Professional : : Начал работу с программой.
+[24-08-22 18:55] | INFO	| __main__:<winstarter>: (line: 170) |-> : Professional : : Начал работу с программой.
+[24-08-22 18:59] | INFO	| __main__:<winstarter>: (line: 170) |-> : Professional : : Начал работу с программой.
+[24-08-22 19:13] | INFO	| __main__:<winstarter>: (line: 170) |-> : Professional : : Начал работу с программой.
+[24-08-22 19:28] | INFO	| __main__:<winstarter>: (line: 170) |-> : Professional : : Начал работу с программой.
+[24-08-22 19:54] | INFO	| __main__:<winstarter>: (line: 170) |-> : Professional : : Начал работу с программой.
+[24-08-22 19:55] | INFO	| __main__:<winstarter>: (line: 170) |-> : Professional : : Начал работу с программой.
+[24-08-22 21:12] | INFO	| __main__:<winstarter>: (line: 170) |-> : Professional : : Начал работу с программой.
+[24-08-22 23:02] | INFO	| __main__:<winstarter>: (line: 170) |-> : Professional : : Начал работу с программой.
+[24-08-22 23:03] | INFO	| __main__:<winstarter>: (line: 170) |-> : Professional : : Начал работу с программой.

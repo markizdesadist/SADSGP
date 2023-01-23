@@ -1,0 +1,33 @@
+[16-01-23 20:31] | ERROR	| __main__:<winstarter>: (line: 109) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (112), thread 'MainThread' (6456):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 200, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x03F15658>
+    └ <function splasher.<locals>.wrapper at 0x03F155C8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\splashscreen.py", line 30, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x03F15658>,)
+    └ <function start at 0x01A18A00>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 193, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x03F15190>
+    └ <__main__.MainWindow object at 0x03F15658>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 109, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x03F15340>
+    └ <__main__.MainWindow object at 0x03F15658>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 121, in ui_window
+    self.root_frame.insertWidget(2, self.button_frame.BtnFrame().set_frame())
+    │    │          │               │    └ <PyQt5.QtWidgets.QFrame object at 0x07441070>
+    │    │          │               └ <__main__.MainWindow object at 0x03F15658>
+    │    │          └ <built-in method insertWidget>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x0743A7C0>
+    └ <__main__.MainWindow object at 0x03F15658>
+
+AttributeError: 'QFrame' object has no attribute 'BtnFrame'

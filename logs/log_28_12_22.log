@@ -1,0 +1,36 @@
+[28-12-22 21:08] | INFO	| __main__:<winstarter>: (line: 192) |-> : Professional : : Начал работу с программой.
+[28-12-22 21:14] | INFO	| __main__:<winstarter>: (line: 192) |-> : Professional : : Начал работу с программой.
+[28-12-22 21:17] | INFO	| __main__:<winstarter>: (line: 192) |-> : Professional : : Начал работу с программой.
+[28-12-22 21:19] | INFO	| __main__:<winstarter>: (line: 192) |-> : Professional : : Начал работу с программой.
+[28-12-22 21:19] | ERROR	| __main__:<winstarter>: (line: 109) |-> : Professional : An error has been caught in function 'setting_window', process 'MainProcess' (6916), thread 'MainThread' (5408):
+Traceback (most recent call last):
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 200, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x03E07658>
+    └ <function splasher.<locals>.wrapper at 0x03E075C8>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\splashscreen.py", line 30, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x03E07658>,)
+    └ <function start at 0x00E38A00>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 193, in start
+    win.setting_window()
+    │   └ <function MainWindow.setting_window at 0x03E07190>
+    └ <__main__.MainWindow object at 0x03E07658>
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 109, in setting_window
+    self.ui_window()
+    │    └ <function MainWindow.ui_window at 0x03E07340>
+    └ <__main__.MainWindow object at 0x03E07658>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 121, in ui_window
+    self.root_frame.insertWidget(2, button_frame.BtnFrame().set_frame())
+    │    │          └ <built-in method insertWidget>
+    │    └ <PyQt5.QtWidgets.QVBoxLayout object at 0x06CCA7C0>
+    └ <__main__.MainWindow object at 0x03E07658>
+
+NameError: name 'button_frame' is not defined
+[28-12-22 21:21] | INFO	| __main__:<macros>: (line: 60) |-> : Professional : Код региона "TK-8" должен быть в формате от 1 до 7.

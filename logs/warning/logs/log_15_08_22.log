@@ -1,0 +1,18 @@
+[15-08-22 21:09] | ERROR	| __main__:<winstarter>: (line: 209) |-> : Professional : An error has been caught in function '<module>', process 'MainProcess' (9952), thread 'MainThread' (5180):
+Traceback (most recent call last):
+
+> File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 209, in <module>
+    start(windows)
+    │     └ <__main__.MainWindow object at 0x05952BB0>
+    └ <function splasher.<locals>.wrapper at 0x05952A00>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 191, in wrapper
+    func(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<__main__.MainWindow object at 0x05952BB0>,)
+    └ <function start at 0x05952970>
+
+  File "C:\Users\Professional\PycharmProjects\SADSGP\winstart\winstarter.py", line 200, in start
+    print(1/0)
+
+ZeroDivisionError: division by zero
